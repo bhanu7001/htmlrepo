@@ -24,6 +24,6 @@ jobs:
       - name: Run SonarQube Scan
         run: |
           mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=htmlrepo \
+             -Dsonar.projectKey=htmlrepo \
             -Dsonar.host.url=http://localhost:9000 \
             -Dsonar.token=${{ secrets.SONAR_TOKEN }}
